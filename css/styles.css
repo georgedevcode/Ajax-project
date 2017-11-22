@@ -1,0 +1,20 @@
+h1{
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+.main{
+   width: 100%;
+}
+
+.content{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.search{
+    margin-left: 20px;
+}
+
+.placeholder{
+    text-align: center;
+}

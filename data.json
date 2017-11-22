@@ -1,0 +1,38 @@
+[
+    {
+        "codigo": "1111",
+        "producto": "Leche Dos Pinos",
+        "precio": "600",
+        "impuesto": "1.5"
+    },
+    {
+        "codigo": "2222",
+        "producto": "Arroz Luciana",
+        "precio": "1000",
+        "impuesto": "3"
+    },
+    {
+        "codigo": "3333",
+        "producto": "Azucar SabeMas",
+        "precio": "800",
+        "impuesto": "2.1"
+    },
+    {
+        "codigo": "4444",
+        "producto": "Atun Sardimar",
+        "precio": "400",
+        "impuesto": "2"
+    },
+    {
+        "codigo": "5555",
+        "producto": "Frijoles Don Pedro",
+        "precio": "900",
+        "impuesto": "4"
+    },
+    {
+        "codigo": "6666",
+        "producto": "Sal Marina",
+        "precio": "300",
+        "impuesto": "1,5"
+    }  
+]

@@ -1,0 +1,71 @@
+<!-- Punto de Venta
+
+- Crear un json con una lista de productos que van a tener
+
+- codigo de producto
+- nombre producto
+- marca
+- tipo de producto ( limpieza, jugos, cereales, carnes, verduras, frutas, harinas)
+- precio unitario
+- impuesto
+
+
+Crear un formulario que al digitar el codigo de producto, vaya agregando a una lista, las compras simuladas, esta debe calcular el precio final por producto sumandole el impuesto de venta
+
+- los resultados se van mostrando en una grid y debe irse actualizando por ajax sin perder los datos anteriores
+
+- cuando termina le da click a un botón pagar y debe mostrar en otro espacio la sumatoria de la compra -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda de abarrotes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="loadDocument()">
+    <h1>Tienda de Abarrotes</h1>
+    <div class="main">
+        <div class="search">
+            <h2>Busqueda del producto</h2>
+            <input type="text" class="placeholder" id="code" placeholder="Ingrese Codigo">
+            <button type="button" class="btn btn-primary btn-info btn-sm" onclick="addList()">Agregar a la lista</button>
+        </div>
+        <div class="content">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>Codigo</td>
+                        <td>Descripcion del Producto</td>
+                        <td>Precio Unitario</td>
+                        <td>Impuesto de Venta</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody id="lista">
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                </tbody>
+                <tfoot>
+                    <td colspan="4"></td>
+                    <td id="total"></td>
+                </tfoot>
+            </table>
+            <div>
+                <button type="button" class="btn btn-primary btn-success" onclick="pay()">Pagar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
